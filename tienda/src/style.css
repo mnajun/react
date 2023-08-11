@@ -1,0 +1,86 @@
+:root {
+    --color-txt-nav: #035a39; /* Definición del valor de la variable */
+  }
+    
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+header{
+    width: 100%;
+    min-height: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+header .containerBrand{
+    width: 20%;
+    max-width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header .containerBrand img{
+    transform: scale(0.6);
+}
+
+header .containerItemList{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+header .containerItemList ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    justify-content: flex-end;
+    cursor: pointer;   
+}
+
+header .containerItemList ul li{
+    margin: 10px;
+    color: var(--color-txt-nav)
+}
+
+header .containerCart{
+    
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 60px;
+}
+
+header .containerCart .containerLenght{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+header .containerCart .containerLenght .containerCart{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--color-txt-nav);
+    color: white;
+    text-align: center;
+    top: 0;
+    left: 100%;
+    border-radius: 50%;
+}
+
